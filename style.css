@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    padding: 10px 100px;
+    width: 100%;
+    height: 130%;
+    background-color: rgb(30, 30, 30);
+}
+
+#main #nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    /* background-color: azure; */
+
+}
+
+#logo {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    width: 300px;
+    height: 100%;
+    color: #eee;
+
+    /* background-color: blue; */
+}
+
+#logo h1 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#logo .logo_icon {
+    width: 80px;
+    height: 35px;
+    background-color: rgb(235, 235, 235);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#nav #menu {
+    display: flex;
+    gap: 35px;
+    /* background-color: teal; */
+}
+
+#nav #menu a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #f9f9f9;
+
+}
+
+#main_top_content {
+    width: 100%;
+    margin-top: 50px;
+}
+
+#main_top_content h1 {
+    font-family: "Roboto";
+    font-size: 182px;
+    color: #ffffff;
+    letter-spacing: -8px;
+    font-weight: 900
+}
+
+#main_top_content #top_para {
+    margin-top: -40px;
+    display: flex;
+    font-size: 15px;   /* background-color: blanchedalmond; */
+}
+
+#main_top_content #top_para .left {
+    padding-right: 20px;
+    padding-top: 20px;
+    width: calc(100%/3);
+    /* background-color: blue; */
+    color: rgb(168, 168, 168);
+}
+
+#main_top_content #top_para .middle {
+    padding-right: 20px;
+    padding-left: 40px;
+    padding-top: 20px;
+    width: calc(100%/3);
+    /* background-color: rgb(255, 64, 0); */
+    color: rgb(168, 168, 168);
+}
+
+#main_top_content #top_para .right {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    width: calc(100%/3);
+    /* background-color: rgb(0, 255, 13); */
+    color: rgb(200, 200, 200);
+}
+#top_para .right a{
+    font-size: 20px;
+    color: rgb(230, 230, 230);
+    font-weight: 600;
+}
+
+#main #bottom_content{
+    position: relative;
+    margin-top: 45px;
+    width: 100%;
+    height: 450px;
+    background-image: url(line.png);
+    background-size: cover;
+    background-position: center;
+    border-bottom-right-radius: 250px;
+    border-top-right-radius: 250px;
+
+}
+
+#bottom_content #main_photo{
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%,0%);
+    bottom: 0;
+    position: absolute;
+    width: 260px;
+    filter: grayscale(100%);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)3s;
+}
+
+#bottom_content #elem_1{
+    position: absolute;
+    top: -20px;
+    left: 200px;
+    width: 150px;
+    rotate: -5deg;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)3s;
+
+}
+
+#bottom_content #elem_2{
+    position: absolute;
+    width: 230px;
+    top: 190px;
+    left: 70px;
+    rotate: -10deg;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)3s;
+
+}
+#bottom_content #elem_3{
+    position: absolute;
+    width: 200px;
+    top: 310px;
+    left: 200px;
+    rotate: 10deg;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)3s;
+
+}
+#bottom_content #elem_4{
+    position: absolute;
+    width: 210px;
+    top: 100px;
+    right: 250px;
+    rotate: 10deg;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)3s;
+
+}
+#bottom_content #elem_5{
+    position: absolute;
+    width: 210px;
+    top: 190px;
+    right: -40px;
+    rotate: -15deg;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)3s;
+}
+
+#bottom_content #elem_6{
+    position: absolute;
+    width: 130px;
+    bottom: -20px;
+    right: 180px;
+    rotate: -15deg;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)3s;
+}
+
+#bottom_content #elem_6:hover{
+    transform: scale(1.1);
+    rotate: 0deg;
+}
+#bottom_content #elem_2:hover{
+    transform: scale(1.1);
+    rotate: 0deg;
+}
+#bottom_content #elem_3:hover{
+    transform: scale(1.1);
+    rotate: 0deg;
+}
+#bottom_content #elem_1:hover{
+    transform: scale(1.1);
+    rotate: 0deg;
+}
+#bottom_content #elem_4:hover{
+    transform: scale(1.1);
+    rotate: 0deg;
+}
+#bottom_content #elem_5:hover{
+    transform: scale(1.1);
+    rotate: 0deg;
+}
